@@ -743,7 +743,7 @@
                 $('.imgo').click(function () {
                     var src = $(this).attr('src');
                     var index = $(this).parent().index() + 1;
-                    var total = $('.carousel-item').length;
+                    var total = $('.gallery img').length;
                     $('.overlay-image').attr('src', src);
                     $('#image-number').text(index + ' / ' + total);
                     $('.overlay').css('display', 'flex').fadeIn();
